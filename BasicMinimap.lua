@@ -306,6 +306,11 @@ local function CreateClock(self) -- Create our own clock
 				GameTime_GetLocalTime(true),
 				normalR, normalG, normalB,
 				whiteR, whiteG, whiteB)
+			bmTooltip:AddDoubleLine( -- Daily reset
+				"Daily reset in:",
+				SecondsToTime(GetQuestResetTime()),
+				normalR, normalG, normalB,
+				whiteR, whiteG, whiteB)
 			bmTooltip:AddLine(" ")
 			bmTooltip:AddLine(dateDisplay, whiteR, whiteG, whiteB)
 			bmTooltip:AddLine(" ")
